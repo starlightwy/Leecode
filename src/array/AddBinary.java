@@ -1,7 +1,7 @@
 package array;
 
 public class AddBinary {
-    public String addBinary(String a, String b) {
+    public static String addBinary(String a, String b) {
         int d = a.length() - b.length();
         if(d>0)
             for(int i=0;i<d;i++)  b = "0" + b;
@@ -34,7 +34,7 @@ public class AddBinary {
         return result;
     }
 
-    public int numOfOne(char a, char b, char c){
+    public static int numOfOne(char a, char b, char c){
         char[] arr = new char[] {a, b, c};
         int result = 0;
         for(char element: arr)

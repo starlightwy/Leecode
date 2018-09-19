@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class ListNode {
     public int val;
-    public static ListNode next;
+    public ListNode next;
     public ListNode(int x) { val = x; }
     public String toString(){
         LinkedList<Integer> print = new LinkedList<>();
