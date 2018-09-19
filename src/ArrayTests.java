@@ -1,13 +1,18 @@
 public class ArrayTests {
-    public static String addBinary(String a, String b) {
-        String result = ""+'1'+'a';
-        System.out.println(result.valueOf('a'));
-        return result;
-    }
-
-    public static void changeLine() {
-        int a = 1;
-        if(a==1)  for(int i=0;i<2;i++)  a += i;
-        System.out.println(a);
+    /**
+     * 在一个array中找到两个不重复的数，相加等于target。
+     * */
+    public static int[] twoSum(int[] nums, int target) {
+        for(int i=0;i<nums.length;i++){
+            for(int j=0;j<nums.length;j++){
+                if(j==i)
+                    continue;
+                else if(nums[i]+nums[j]==target)
+                    return new int[]{i,j};
+                else
+                    continue;
+            }
+        }
+        return null;
     }
 }
