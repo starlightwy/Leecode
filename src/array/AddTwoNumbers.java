@@ -1,23 +1,6 @@
 package array;
 
-public class ArrayTests {
-    /**
-     * 在一个array中找到两个不重复的数，相加等于target。
-     * */
-    public static int[] twoSum(int[] nums, int target) {
-        for(int i=0;i<nums.length;i++){
-            for(int j=0;j<nums.length;j++){
-                if(j==i)
-                    continue;
-                else if(nums[i]+nums[j]==target)
-                    return new int[]{i,j};
-                else
-                    continue;
-            }
-        }
-        return null;
-    }
-
+public class AddTwoNumbers {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int solution = 1;
         if(solution==1){
@@ -72,46 +55,5 @@ public class ArrayTests {
             return dummyHead.next;
         }
         return null;
-    }
-
-    public String addBinary(String a, String b) {
-        int d = a.length() - b.length();
-        if(d>0)
-            for(int i=0;i<d;i++)  b = "0" + b;
-        else if(d<0)
-            for(int i=0;i<-d;i++)  a = "0" + a;
-
-        String result = "";
-        char carry = '0';
-        for(int i=a.length()-1;i>=0;i--){
-            int temp = numOfOne(a.charAt(i), b.charAt(i), carry);
-            if(temp==0){
-                result = "0" + result;
-                carry = '0';
-            }
-            else if(temp==1){
-                result = "1" + result;
-                carry = '0';
-            }
-            else if(temp==2){
-                result = "0" + result;
-                carry = '1';
-            }
-            else if(temp==3){
-                result = "1" + result;
-                carry = '1';
-            }
-            if(i==0 && carry=='1')
-                result = "1" + result;
-        }
-        return result;
-    }
-
-    public int numOfOne(char a, char b, char c){
-        char[] arr = new char[] {a, b, c};
-        int result = 0;
-        for(char element: arr)
-            if(element=='1')  result++;
-        return result;
     }
 }
