@@ -12,4 +12,9 @@ public class GeneralTests {
         System.out.println(a);
     }
 
+    public static void subString(){
+        String str = "apple";
+        System.out.println(str.substring(1,3));
+    }
+
 }

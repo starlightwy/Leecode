@@ -1,10 +1,12 @@
 import array.AddTwoNumbers;
 import array.*;
+import string.LongestPalindrome;
 
 public class Main {
     public static void main(String[] args) {
         GeneralTests.addBinary("11", "1");
         GeneralTests.changeLine();
+        GeneralTests.subString();
         System.out.print("\n");
 
         //TwoSum
@@ -25,5 +27,8 @@ public class Main {
         //AddBinary
         System.out.println("AddBinary: \n" + AddBinary.addBinary("11", "1"));
         System.out.print("\n");
+
+        //LongestPalindrome
+        System.out.println(LongestPalindrome.longestPalindrome("abb"));
     }
 }
