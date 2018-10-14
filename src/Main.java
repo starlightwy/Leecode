@@ -1,6 +1,7 @@
 import array.AddTwoNumbers;
 import array.*;
 import string.LongestPalindrome;
+import string.ReverseInteger;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,5 +31,8 @@ public class Main {
 
         //LongestPalindrome
         System.out.println(LongestPalindrome.longestPalindrome("abb"));
+
+        //ReverseInteger
+        System.out.println(ReverseInteger.reverse(1534236469));
     }
 }

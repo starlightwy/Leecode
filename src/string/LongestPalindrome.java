@@ -1,7 +1,7 @@
 package string;
 
 public class LongestPalindrome {
-    public String longestPalindrome(String s) {
+    public static String longestPalindrome(String s) {
         int len=s.length();
         while(len>=0){
             for(int i=0;i+len<=s.length();i++){
@@ -13,7 +13,7 @@ public class LongestPalindrome {
         return s.substring(0,1);
     }
 
-    public boolean isPali(String s, int left, int right){
+    public static boolean isPali(String s, int left, int right){
         while(left<right){
             if(s.charAt(left)!=s.charAt(right))
                 return false;
