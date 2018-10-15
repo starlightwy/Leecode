@@ -2,6 +2,7 @@ import array.AddTwoNumbers;
 import array.*;
 import string.LongestPalindrome;
 import string.ReverseInteger;
+import string.StringToInteger;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,5 +35,8 @@ public class Main {
 
         //ReverseInteger
         System.out.println(ReverseInteger.reverse(1534236469));
+
+        //StringToInteger
+        System.out.println(StringToInteger.myAtoi("  0000000000012345678"));
     }
 }
