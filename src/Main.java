@@ -1,5 +1,6 @@
 import array.AddTwoNumbers;
 import array.*;
+import integer.PalindromeNumber;
 import string.LongestPalindrome;
 import string.ReverseInteger;
 import string.StringToInteger;
@@ -37,6 +38,9 @@ public class Main {
         System.out.println(ReverseInteger.reverse(1534236469));
 
         //StringToInteger
-        System.out.println(StringToInteger.myAtoi("  0000000000012345678"));
+        System.out.println(StringToInteger.myAtoi("  00000000000123456789"));
+
+        //PalindromeNumber
+        System.out.println(PalindromeNumber.isPalindrome(3215));
     }
 }
