@@ -42,5 +42,8 @@ public class Main {
 
         //PalindromeNumber
         System.out.println(PalindromeNumber.isPalindrome(3215));
+
+        //ContainerWithMostWater
+        System.out.println(ContainerWithMostWater.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
     }
 }
