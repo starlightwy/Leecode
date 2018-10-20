@@ -1,6 +1,7 @@
 import array.AddTwoNumbers;
 import array.*;
 import integer.PalindromeNumber;
+import string.LongestCommonPrefix;
 import string.LongestPalindrome;
 import string.ReverseInteger;
 import string.StringToInteger;
@@ -45,5 +46,8 @@ public class Main {
 
         //ContainerWithMostWater
         System.out.println(ContainerWithMostWater.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
+
+        //LongestCommonPrefix
+        System.out.println(LongestCommonPrefix.longestCommonPrefix(new String[]{"aa","a"}));
     }
 }
