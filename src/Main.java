@@ -49,5 +49,8 @@ public class Main {
 
         //LongestCommonPrefix
         System.out.println(LongestCommonPrefix.longestCommonPrefix(new String[]{"aa","a"}));
+
+        //ThreeSumClosest
+        System.out.println(ThreeSumClosest.threeSumClosest(new int[]{1, 1, -1, -1, 3}, -1));
     }
 }
